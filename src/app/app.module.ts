@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { PostCreateComponent } from './posts/post-create/post-create.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent],
+  declarations: [AppComponent, PostCreateComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -20,6 +22,7 @@ import { PostCreateComponent } from './posts/post-create/post-create.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
