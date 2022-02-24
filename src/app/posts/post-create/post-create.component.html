@@ -1,1 +1,9 @@
-<h1>The post create component</h1>
+<textarea
+  name="post"
+  id=""
+  cols="30"
+  rows="10"
+  [(ngModel)]="enteredValue"
+></textarea>
+<button (click)="onAddPost()">Create</button>
+<p>{{ newPost }}</p>
