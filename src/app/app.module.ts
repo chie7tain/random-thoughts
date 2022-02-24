@@ -8,12 +8,20 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatIconModule } from '@angular/material/icon';
 
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
+import { PostListComponent } from './posts/post-list/post-list.component';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    PostCreateComponent,
+    HeaderComponent,
+    PostListComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,6 +31,8 @@ import { HeaderComponent } from './header/header.component';
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
+    MatExpansionModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
