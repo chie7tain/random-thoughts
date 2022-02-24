@@ -1,9 +1,17 @@
-<textarea
-  name="post"
-  id=""
-  cols="30"
-  rows="10"
-  [(ngModel)]="enteredValue"
-></textarea>
-<button (click)="onAddPost()">Create</button>
+<mat-card>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <textarea
+      matInput
+      name="post"
+      id=""
+      cols="30"
+      rows="10"
+      [(ngModel)]="enteredValue"
+    ></textarea>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" (click)="onAddPost()">
+    Create
+  </button>
+</mat-card>
 <p>{{ newPost }}</p>
