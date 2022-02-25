@@ -12,9 +12,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 
 import { PostCreateComponent } from './posts/post-create/post-create.component';
-
+import { HeaderComponent } from './header/header.component';
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent],
+  declarations: [AppComponent, PostCreateComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
