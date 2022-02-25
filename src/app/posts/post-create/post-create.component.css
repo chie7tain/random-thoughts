@@ -1,13 +1,13 @@
 mat-card {
-  width: 80%;
+  /* width: 80%;
   min-width: 150px;
-  max-width: 500px;
-  width: 100%;
+  max-width: 500px; */
+  /* width: 100%; */
   border: 1px solid blue;
   margin: 10px auto;
 }
 textarea {
-  width: 100%; 
+  width: 100%;
 }
 .example-full-width {
   width: 100%;
