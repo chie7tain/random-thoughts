@@ -1,5 +1,14 @@
 # MeanCourse
 
+#learnings
+there are several ways to do template binding in angular
+
+- two way binding e.g [(ngModel)]="name"
+- one way binding e.g [value]="name"
+- string interpolation e.g {{name}}
+- property binding e.g [style.color] = "name"
+- event binding e.g (click)="function to execute" (keyup)="function to execute"
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
 ## Development server
