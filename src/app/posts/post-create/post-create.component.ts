@@ -1,8 +1,8 @@
 // import { Component, EventEmitter,Output } from '@angular/core';
 
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm, Validators, FormControl } from '@angular/forms';
-import PostModel from '../post.model';
+import { PostsService } from '../posts.service';
 @Component({
   selector: 'app-post-create',
   templateUrl: './post-create.component.html',
@@ -12,8 +12,8 @@ export class PostCreateComponent {
   enteredTitle = '';
   enteredContent = '';
   enteredValue = '';
-  @Output() postCreated = new EventEmitter<PostModel>();
 
+  constructor(public postsService: PostsService) {}
   value = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {
@@ -28,10 +28,7 @@ export class PostCreateComponent {
     if (form.invalid) {
       return;
     }
-    const post: PostModel = {
-      title: form.value.title,
-      content: form.value.content,
-    };
-    this.postCreated.emit(post);
+
+    this.postsService.addPost(form.value.title, form.value.content);
   }
 }
