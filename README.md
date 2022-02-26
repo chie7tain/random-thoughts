@@ -9,6 +9,11 @@ there are several ways to do template binding in angular
 - property binding e.g [style.color] = "name"
 - event binding e.g (click)="function to execute" (keyup)="function to execute"
 
+how do you pass data from one component to another? how do you pass data around in a larger application? instead of using property(one way and two way) and event binding ? and centralize tasks ?
+- we use a service and inject it into the component we want to use it in
+now in order to use a service we would name a file using the .service.ts extension and call the Injectable({"providedIn":"root"}) decorator so that the service can be available to the entire application otherwise we would have to import the service into the app.module.ts file and then pass it into the providers array so that the angular would be aware of it
+ - subsequently, in order to use the service as a dependency of a component we would inject it into the component by creating passing it into a constructor and using the public keyword before the parameter name so that the it would be made into a property of the component and then we would use the property name to access the service in the component
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
 ## Development server
