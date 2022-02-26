@@ -1,14 +1,16 @@
 <mat-card>
   <mat-form-field>
+    <input matInput type="text" [(ngModel)]="enteredTitle">
+  </mat-form-field>
+  <mat-form-field>
     <textarea
       matInput
       rows="6"
-      [(ngModel)]="enteredValue"
-      (keydown)="onAddPost()"
+      [(ngModel)]="enteredContent"
     ></textarea>
   </mat-form-field>
   <button mat-raised-button color="primary" (click)="onAddPost()">
     Create
   </button>
 </mat-card>
-<p>{{ enteredContent }}</p>
+

@@ -1,0 +1,8 @@
+:host {
+  margin-top: 1rem;
+  display: block;
+}
+.info-text {
+  font-size: 0.8rem;
+  color: #999;
+}

@@ -1,13 +1,5 @@
-mat-card {
-  border: 1px solid blue;
-  margin: 10px auto;
-  width: 80%;
-}
 mat-form-field,
 textarea {
-  width: 100%;
-}
-.example-full-width {
   width: 100%;
 }
 mat-button {
