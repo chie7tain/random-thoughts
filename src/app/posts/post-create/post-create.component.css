@@ -1,8 +1,9 @@
 mat-form-field,
 textarea {
   width: 100%;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
+
 mat-button {
   background-color: #3f51b5;
 }
