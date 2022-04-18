@@ -9,11 +9,7 @@ const app = express();
 
 const Post = require("./models/post");
 
-const MongoDBString =
-  "mongodb+srv://chie7tain:2A84scE0NCKxgVaK@cluster1.ku1s7.mongodb.net/thoughts?retryWrites=true&w=majority";
-// "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
-// const MongoDPass = "2A84scE0NCKxgVaK";
-
+const MongoDBString = process.env.MONGO_URI;
 mongoose
   .connect(MongoDBString)
   .then(() => {
