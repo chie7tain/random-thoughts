@@ -20,7 +20,6 @@ export class PostCreateComponent {
     if (this.value.hasError('required')) {
       return 'You must enter a value';
     }
-
     return this.value.hasError('value') ? 'Not a valid value' : '';
   }
 
@@ -29,7 +28,11 @@ export class PostCreateComponent {
       return;
     }
 
-    this.postsService.addPost(form.value.title, form.value.content);
+    this.postsService.addPost(
+      form.value.id,
+      form.value.title,
+      form.value.content
+    );
     form.resetForm();
   }
 }
